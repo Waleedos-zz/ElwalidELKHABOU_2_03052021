@@ -1,1 +1,24 @@
-font-family: 'Raleway', sans-serif;
+/* Typography */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
+
+
+/* Colors */
+
+:root {
+    --color-blue: #0065FC;
+    --color-light-blue: #DEEBFF;
+    --color-black: #000000;
+    --color-gray: #F2F2F2;
+    --color-white: #FFFFFF;
+    --color-transparent: rgba(255, 255, 255, .4);
+}
+
+
+/* General class */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}

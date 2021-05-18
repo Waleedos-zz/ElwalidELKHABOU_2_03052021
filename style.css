@@ -22,3 +22,96 @@
     padding: 0px;
     list-style: none;
 }
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.2;
+    color: var(--color-black);
+}
+
+h1 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+a {
+    color: var(--color-black);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* GENERAL */
+.header_nav,
+.section_recherche,
+.section_hebergements,
+.section_activite,
+.section_footer 
+{
+    padding: 0rem 2.5vw;
+    width: 95vw;
+}
+
+
+/* Body - Header */
+.header_nav
+{
+	display: flex;
+}
+
+.header_nav {
+    margin-bottom: 2rem;
+}
+
+.header_div_header {
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 160px);
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_img {
+    justify-self: start;
+    padding-top: 40px;
+    min-width: 97px;
+    min-height: 45px
+}
+
+.link_header {
+    padding-top: 50px;
+    padding-bottom: 16px;
+    text-align: center;
+    color: var(--color-black);
+    cursor: pointer;
+}
+
+.link_header--blue:hover {
+    padding-top: 48px;
+    color: var(--color-blue);
+    border-top: 2px solid var(--color-blue);
+}
+
+
+.link_header--bold {
+    font-weight: 600;
+    color: var(--color-blue);
+}

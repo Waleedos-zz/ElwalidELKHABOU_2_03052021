@@ -15,16 +15,19 @@
     <body>
         <!-- Header -->
         <header>
-             <nav class="header_nav">
-                <div class="header_div_header">
-                    <a href="index.html" title="Retour à l'accueil">
-                        <img class=logo_img src=images/logo/Reservia.svg alt="Logo Reservia">
-                    </a>                     
-                <a class="link_header link_header--blue" href="#Hosting">Hébergements </a>
-                <a class="link_header link_header--blue" href="#Activities">Activités </a>
-                <a class="link_header link_header--bold" href="#">S'inscrire</a>
-                </div> 
-            </nav>
+            <div id="header_pricipale">
+                <div id="logo_container">
+                    <img id="logo_reservia" alt="Logo_Reservia" src="images/logo/Reservia.svg">
+                </div>
+
+                <nav>
+                    <!-- Navigation : lien vers autres sections sur la même page -->
+                    <a id="hebergements_link" href="#hebergements">Hébergements</a>
+                    <a id="activites_link" href="#activites">Activités</a>
+                    <!-- Lien d'inscription, page cible non implémentée -->
+                    <a id="signup_link" href="#">S'inscrire</a>
+                </nav>                
+            </div>    
         </header>
 
         <!-- Section 1 Titre - Recherche - Filtres -->

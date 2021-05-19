@@ -31,26 +31,34 @@
         </header>
 
         <!-- Section 1 Titre - Recherche - Filtres -->
-        <section class="section_recherche">
+        <section id="section_recherche">
             
             <!-- div 1 Recherche & Titre Principal -->
-            <div class="title_principal_recherche">
+            <div id="title_principal_recherche">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>                
             </div>
 
 
-            <!-- div 2 Recherche Localisation Bouton -->
-            <div class="recherche_bouton_et_icone">
-                <i class="fas fa-map-marker-alt"></i>
-                <input type="text" placeholder="Marseille, France">
-                <button type="button" class="recherche_text">Rechercher</button>
-                <button type="button" class="recherche_icon"><i class="fas fa-search"></i></button>             
-            </div> 
-
+            <!-- <div id="search_bar"> -->
+            <form id="search_bar_container" method="post" action="#">
+                <p id="search_bar">
+                <span id="locate_icon_container">
+                    <i class="fas fa-map-marker-alt" id="locate_icon"></i>
+                </span>
+                    <input type="search" name="search" id="search" placeholder="Marseille, France"/>
+                    
+                    <!-- Bouton de La recherche contenant soit le texte "Rechercher" soit l'icone FA Loupe -->
+                    <button type="submit"  id="valid_button" disabled>
+                        <i class="fas fa-search" id="valid_button_icon"></i>
+                        <span id="valid_button_text">Rechercher</span>
+                    </button>
+                </p>
+            </form>              
+         
 
             <!-- div 3 Les Filtres -->
-            <div class="filtres_selections">
+            <div id="filtres_selections">
                 <p>Filtres</p>
                     <button><i class="fas fa-money-bill-wave"></i>Économique</button>
                     <button><i class="fas fa-child"></i>Familial</button>
@@ -60,7 +68,7 @@
 
 
             <!-- div 4 Paragraphe last section 1 -->    
-            <div class="info_suppl_section1">
+            <div id="info_suppl_section1">
                 <i class="fas fa-info"></i><p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>     
 
@@ -89,5 +97,4 @@
         </section>
         
 
-    </footer>    
-
+    </footer>

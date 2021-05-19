@@ -15,7 +15,7 @@
     <body>
         <!-- Header -->
         <header>
-            <div id="header_pricipale">
+            <div id="header_principale">
                 <div id="logo_container">
                     <img id="logo_reservia" alt="Logo_Reservia" src="images/logo/Reservia.svg">
                 </div>
@@ -46,7 +46,7 @@
                 <span id="locate_icon_container">
                     <i class="fas fa-map-marker-alt" id="locate_icon"></i>
                 </span>
-                    <input type="search" name="search" id="search" placeholder="Marseille, France"/>
+                    <input id="search" placeholder="Marseille, France" type="search" name="search"/>
                     
                     <!-- Bouton de La recherche contenant soit le texte "Rechercher" soit l'icone FA Loupe -->
                     <button type="submit"  id="valid_button" disabled>
@@ -58,12 +58,41 @@
          
 
             <!-- div 3 Les Filtres -->
-            <div id="filtres_selections">
-                <p>Filtres</p>
-                    <button><i class="fas fa-money-bill-wave"></i>Économique</button>
-                    <button><i class="fas fa-child"></i>Familial</button>
-                    <button><i class="fas fa-heart"></i>Romantique</button>
-                    <button><i class="fas fa-dog"></i>Animaux autorisés</button>                
+            <div id="filtres">
+                <h2>Filtres</h2>
+
+                <!-- Les Boutons filtres: les actions correspondantes ne sont pas opérationnelles -->
+                <div id="filter_buttons">
+                
+                    <form id="button_economique" action="/button-type">
+                        <button type="button" >
+                            <i class="fas fa-money-bill-wave button_icon"></i>
+                            <span class="button_text">Économique</span>
+                        </button>
+                    </form>
+                
+                    <form id="button_familial">
+                        <button type="button" >
+                            <i class="fas fa-child button_icon"></i>
+                            <span class="button_text">Familial</span>
+                        </button>
+                    </form>
+                
+                    <form id="button_romantique">
+                        <button type="button" >
+                            <i class="fas fa-heart button_icon"></i>
+                            <span class="button_text">Romantique</span>
+                        </button>
+                    </form>
+                
+                    <form id="button_animaux">
+                        <button type="button" >
+                            <i class="fas fa-dog button_icon"></i>
+                            <span class="button_text">Animaux autorisés</span>
+                        </button>
+                    </form>
+
+                </div>        
             </div> 
 
 
@@ -98,3 +127,5 @@
         
 
     </footer>
+
+

@@ -68,7 +68,7 @@ body
     margin-top: 15px;
 }
 
-#header_pricipale
+#header_principale
 {
     display: flex;
     align-items: center;
@@ -78,9 +78,6 @@ body
 {
     flex:1;
 }
-
-#logo_container
-element-style
 
 
 header, #hebergements_link, #activites_link, #signup_link
@@ -146,28 +143,32 @@ a
 
 /* Equilibrer l'espacement entre mes 4 dev dans ma première section */
 
-#title_principal_recherche, #rsearch_bar_container, #filtres_selections, #info_suppl_section1
+#title_principal_recherche, #search_bar_container, #filtres_selections, #info_suppl_section1
 {
     padding-bottom: 2px;
 }
 
-#search_bar_container {
-    margin-top: 18px;
+#search_bar_container
+{
+    margin-top: 10px;
 }
 
-#search_bar{
+#search_bar
+{
     display:flex;
     flex-direction: row;
 }
 
-#locate_icon{
+#locate_icon
+{
     background-color:#F2F2F2 ;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
     padding:10px 13px 12px 13px;
 }
 
-#search{
+#search
+{
     padding:10px;
     margin-right:0px;
     margin-left:0px;
@@ -175,21 +176,78 @@ a
     border-left: 0px;
     border-right:0px;
 
-    /* Taille fixe de 200px à l'espace de saisie pour PC/Tablette*/
-    width:200px;
+    /* Taille fixe de 200px pour le style.css principal*/
+    width: 200px;
 }
 
-#valid_button{
+#search
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 0.9em;
+}
+
+#valid_button_text
+{
+    font-weight: bold;
+}
+
+#valid_button
+{
     background-color:#0065FC; 
     color:#FFFFFF;
     border:0px;
-    font-size: 0.7em;
+    font-size: 0.9em;
     padding:11px;
     margin-left:-5px;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
 }
 /* Masquer le bouton avec l'icone loupe, on affiche celui avec le texte uniquement */
-#valid_button_icon{
+#valid_button_icon
+{
     display:none;
+}
+
+#filtres
+{
+    display: flex;
+    align-items: center;
+}
+
+#filter_buttons
+{
+    display: flex;
+}
+
+#filtres h2
+{
+    margin-right:25px;
+    font-size: 1em;
+}
+
+#filter_buttons form
+{
+    margin-right:20px;
+    display: flex;
+}
+
+#filter_buttons button
+{
+    display: flex;
+    background-color: #FFFFFF;
+    height:40px;
+    align-items:center;
+    border-radius: 180px;
+    border:#d3d1d1 solid 1px;
+}
+
+#filter_buttons button:hover
+{
+    /* Au survol des boutons, ILS changent d’apparence et se decalent vers le bas et à droite avec affichage d'une ombre  */
+    position:relative;
+    right: -4px;
+    bottom:-4px;
+    box-shadow: 4px -4px 5px #ebebeb;
 }

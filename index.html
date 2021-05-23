@@ -2,11 +2,25 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
+
+        <!-- Fix pour internet explorer : resout les problèmes avec les icones FAwesome et avec les photos
+        en forcant le mode de compatibilité au niveau le plus récent -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Reservia</title>
         <script src="https://kit.fontawesome.com/a2b6822e4f.js" crossorigin="anonymous"></script>
         <link rel="shortcut icon" href="images/logo/favicon.ico">
-        <link rel="stylesheet" href="style.css">
+
+        <!-- Pour tout le monde -->
+        <link rel="stylesheet" href="style.css" /> <!-- Pour tout le monde -->
+
+        <!-- Pour ceux qui ont une résolution entre 375px et 667px -->
+        <link rel="stylesheet" media="screen and (min-width: 375px) and (max-width: 667px)" href="mobile.css" /> 
+
+        <!-- Pour ceux qui ont une résolution entre 768px et 1024px -->
+        <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1024px)" href="768px.css" />
+        
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
     </head>
@@ -20,13 +34,19 @@
                     <img id="logo_reservia" alt="Logo_Reservia" src="images/logo/Reservia.svg">
                 </div>
 
-                <nav>
-                    <!-- Navigation : lien vers autres sections sur la même page -->
-                    <a id="hebergements_link" href="#hebergements">Hébergements</a>
-                    <a id="activites_link" href="#activites">Activités</a>
-                    <!-- Lien d'inscription, page cible non implémentée -->
+                
+                <div id="heb_et_act_link">
+                	<nav>
+                    	<!-- Navigation : lien vers autres sections sur la même page -->
+                    	<a id="hebergements_link" href="#hebergements">Hébergements</a>
+                    	<a id="activites_link" href="#activites">Activités</a>
+                    	<!-- Lien d'inscription, page cible non implémentée -->
+                	</nav>
+                </div>
+                
+                <div id="signup_link_div">	     
                     <a id="signup_link" href="#">S'inscrire</a>
-                </nav>                
+                </div>
             </div>    
         </header>
 

@@ -2,9 +2,6 @@
 /* DEFINITION POLICES */
 /* ------------------ */
 
-/* Définition police Raleway en deux parties :
-    1) Texte normal = Raleway Regular 400
-    2) Texte en gras = Raleway Bold 700 */
 @font-face 
 {
     font-family: 'Raleway';
@@ -31,78 +28,36 @@
     font-style: normal;
 }
 
-/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
-/*@media all and (min-width: 1024px) and (max-width: 1280px)*/
-
 /* ----------------- */
 /* ELEMENTS GENERAUX */
 /* ----------------- */
 
-*{
-    /* Même police pour toute la page */
+*
+{
+    /* Détermination du font pour toute la page */
     font-family: "Raleway", sans-serif;
 }
 
 body
 {
-    width:80%;
+    width:100%;
     margin:auto;
-    margin-top: 15px;
 }
 
-#header_principale
+header, #hebergements, #activites
 {
-    display: flex;
-    align-items: center;
-}
-
-#logo_container
-{
-    flex:1;
-}
-
-
-header, #hebergements_link, #activites_link, #signup_link
-{
-    width: 100%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
 
-#hebergements_link, #activites_link, #signup_link
-{
-    padding-left:40px;
-    padding-right:15px;
-    padding-top:25px;
-}
-
 
 /* Détermination des éléments en texte gras */
-#signup_link
-{
-    font-weight:bold;
-    color:#0065FC;
-}
-
-h1 h2 h3 
+h1, h2, h3, #signup_link
 {
     font-weight:bold;
 }
 
-h1
-{
-    font-size:1.3em;
-}
-
-h2
-{
-    font-size:0.9em;
-}
-
-h3
-{
-    font-size:0.68em;
-}
 
 a
 {
@@ -110,51 +65,118 @@ a
     color:black;
 }
 
-/* Détermination de la couleur du lien hebergement */
-#hebergements_link
+
+h1
+{
+    font-size:1.5em;
+}
+
+
+h2
+{
+    font-size:1.35em;
+}
+
+
+h3
+{
+    font-size: 1.2em;
+}
+
+
+p
+{
+    font-size: 1.1em;
+}
+
+
+/* ------ */
+/* HEADER */
+/* ------ */
+
+header
+{
+    margin-bottom:28px;
+    /* Un espace de 5px a gauche sur tout le header pour PC*/
+    padding-left: 5px;
+}
+
+
+#header_principale
+{
+    padding-top: 5px;
+    display:flex;
+}
+
+
+#logo_container
+{
+    flex:1;
+}
+
+
+nav
+{
+    display:flex;
+}
+
+
+#signup_link, #activites_link, #hebergements_link
+{
+    padding-left:15px;
+    padding-right:15px;
+    padding-top:25px;
+}
+
+
+#signup_link, #hebergements_link
 {
     color:#0065FC;
 }
 
 
-#hebergements_link:hover{
+/* Survol : effet pour faire apparaitre la bordure en haut pour "Hebergements" et "Activités" */
+#hebergements_link:hover
+{
     border-top:2px #0065FC solid; 
 }
 
-#activites_link:hover{
-    border-top:2px solid; 
+
+#activites_link:hover
+{
+    border-top:2px #F2F2F2 solid; 
 }
 
 
-/* ----------------- */
-/* ELEMENTS DE MA 1ERE SECTION : TITRE DE LA PAGE; */
-/* ----------------- */
+/*Section 1 Titre - Recherche - Filtres*/
+
+
+#section_recherche
+{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /* Reduire l'espacement entre les deux phrases de description */
-
 #title_principal_recherche h1
 {
-    margin-bottom: 3px;
+    margin-bottom: 6px;
 }
 
 #title_principal_recherche p
 {
-    margin-top: 10px;
-    font-size: 1.1em;
+    margin-top: 6px;
 }
 
 
-/* Equilibrer l'espacement entre mes 4 dev dans ma première section */
-
-#title_principal_recherche, #search_bar_container, #filtres_selections, #info_suppl_section1
-{
-    padding-bottom: 2px;
-}
-
+/* Traçage et Mise en forme de la barre de recherche */
 #search_bar_container
 {
-    margin-top: 10px;
+    margin-top: 30px;
 }
+
 
 #search_bar
 {
@@ -162,51 +184,48 @@ a
     flex-direction: row;
 }
 
+
 #locate_icon
 {
     background-color:#F2F2F2 ;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
-    padding: 12px 28px 12px 25px;
+    padding:14px 13px 12px 13px;
 }
+
 
 #search
 {
-    padding:10px;
+    padding:12px;
+    font-size: 1.0em;
+    font-weight:bold;
     margin-right:0px;
-    margin-left:0px;
+    margin-left:15px;
     border:#F2F2F2 solid 1px;
     border-left: 0px;
     border-right:0px;
 
-    /* Taille fixe de 200px pour le style.css principal*/
-    width: 250px;
+    /* Taille fixe de 260px pour l'entrée du texte par le client juste pour le PC */
+    width:260px;
 }
 
-#search
-{
-    font-size: 1.1em;
-    font-weight: bold;
-    color: black;
-}
-
-#valid_button_text
-{
-    font-weight: bold;
-}
 
 #valid_button
 {
     background-color:#0065FC; 
     color:#FFFFFF;
     border:0px;
-    font-size: 1.1em;
-    padding:11px;
-    margin-left:-10px;
-    margin-right: -10px;
+    font-size: 1.0em;
+    font-weight:bold;
+    padding-top:11px;
+    padding-bottom: 11px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left:-5px;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
 }
+
 
 /* Masquer le bouton avec l'icone loupe, on affiche celui avec le texte uniquement */
 #valid_button_icon
@@ -214,53 +233,65 @@ a
     display:none;
 }
 
-#filtres
+
+/* Mise en forme des boutons filtres */
+#filters
 {
-    display: flex;
+    display:flex;
+    flex-direction: row;
     align-items: center;
-    padding-top: 15px;
-    padding-left: 15px;
+    margin-top: 35px;
 }
+
+
+#filters h2
+{
+    margin-right:50px;
+    margin-left: 10px;
+    font-size:1em;
+}
+
 
 #filter_buttons
 {
-    display: flex;
+    display:flex;
+    flex-direction: row;
 }
 
-#filtres h2
-{
-    margin-right:40px;
-    font-size: 1.1em;
-}
 
 #filter_buttons form
 {
-    margin-right:50px;
+    margin-right:20px;
     display: flex;
+    flex-direction: row;
 }
+
 
 #filter_buttons button
 {
-    display: flex;
     background-color: #FFFFFF;
     height:40px;
+    display: flex;
+    flex-direction: row;
+    font-weight:bold;
+    font-size: 1em;
+    margin-right: 40px;
     align-items:center;
     border-radius: 180px;
     border:#d3d1d1 solid 1px;
-    padding-right:20px;
 }
+
 
 #filter_buttons button:hover
 {
-    /* Au survol des boutons, ILS changent d’apparence et se decalent vers le bas et à droite avec affichage d'une ombre  */
+    /* Au survol des boutons, on decale vers le bas/gauche et on affiche une ombre en haut à droite  */
     position:relative;
-    right: -4px;
+    left:-4px;
     bottom:-4px;
     box-shadow: 5px -4px 5px grey;
 }
 
 
-/* Les icones qui sont juste à la gauche du texte des boutons filtres*/
 .button_icon
 {
     color:#0065FC;
@@ -276,25 +307,25 @@ a
     z-index: 1;
 }
 
+
 .button_text
 {
     padding-left: 7px;
     padding-right: 5px;
 }
 
-.button_text
-{
-    font-size: 1.1em;
-    font-weight:bold;
-}
 
 /* Mise en forme de la phrase d'information */
-#info_nb_logements{
+#info_nb_logements
+{
     display:flex;   
     flex-direction: row;
     align-items:center;
 }
-#circle_info{
+
+
+#circle_info
+{
     width:20px;
     height:20px;
     background-color:#FFFFFF;
@@ -303,18 +334,26 @@ a
     display:flex;
     justify-content: center;
     align-items:center;
+    margin-left: 12px;
 }
-#circle_info i{
+
+
+#circle_info i
+{
     font-size:0.7em;
     color:#0065FC;
     background-color: #FFFFFF;
 }
-#info_text{
+
+
+#info_text
+{
     font-size: 1em;
     padding-left:6px;
 }
 
+
 #info_suppl_section1
 {
-    padding-left: 10px;    
+    margin-top: 30px;
 }

@@ -2,9 +2,8 @@
     /* Affichage spécifique Mobiles */
     /* ---------------------------- */
 
-    @media all and (min-width:375px) and (max-width:667px){
-
-
+    @media all and (min-width:375px) and (max-width:667px)
+    {
         /* Réautoriser les sections à s'étendre sur toute la largeur */
         header, #hebergements, #activites
         {
@@ -18,6 +17,8 @@
     
         header
         {
+            margin-left: 0px;
+            margin-right: 0px;
             padding-left: 0px;
         }
     
@@ -96,12 +97,6 @@
         #site_description
         {
             font-size:0.95em;
-        }
-    
-    
-        h1
-        {
-            font-size:1.3em;
         }
     
     
@@ -192,7 +187,7 @@
     
         .button_icon
         {
-            font-size: 1.em;
+            font-size: 1em;
             height:40px;
             width:40px;
         }
@@ -249,4 +244,185 @@
         }
         
     
+        /* ------------------------------------------------------------------------------------------------ */
+        /* ------------------SECTIONS (Hébergement à Marseilles + Les Plus Populaires)--------------------- */
+        /* ------------------------------------------------------------------------------------------------ */
+    
+        #hebergements
+        {
+            display:flex;
+            flex-direction: column;
+            width: 100%;
+            padding-left: 0px;
+            padding-right: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+    
+        }
+    
+    
+        #nos_hebergements
+        {
+            background-color:#FFFFFF;
+            order:2;
+            width: 100%;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
         
+        }
+    
+    
+        #populaires
+        {
+            order:1;
+            width: 100%;
+            padding-left: 0px;
+            padding-right: 0px;
+            margin-left: 20px;
+        }
+     
+    
+        #populaires .articles_des_heberg 
+        {
+            margin-right: 45px;
+        }    
+    
+        /* Enlever l'arrondi sur les coins des sections */
+        #populaires, #nos_hebergements
+        {
+            border-radius:0px;
+        }
+    
+        
+        /* Agrandir les titres des sections */
+        #populaires h2, #nos_hebergements h2, #activites h2
+        {
+            font-size:1.3em;
+        }
+    
+    
+        /* AJUSTEMENTS SUR SECTION POPULAIRES */
+    
+        /* Reorganiser les display et les dimensions des articles "populaires" pour qu'ils soient de memes largeures
+        que celles des "Hebergements" */
+        #populaires
+        {
+            padding-bottom:20px;
+        }
+    
+    
+        #populaires h2
+        {
+            width:88%;
+            margin-bottom: 20px;
+        }
+    
+    
+        #populaires a
+        {
+            width:100%;
+            height:130px;
+            border-radius: 18px;
+            padding: 5px;
+            margin-bottom: 15px;
+        }
+    
+    
+        #populaires img
+        {
+            width: 38%;
+            height: 100%;
+            object-fit:cover;
+            border-top-left-radius: 14px;
+            border-bottom-left-radius: 14px;
+        }
+    
+    
+        .populaires_text h3
+        {
+            font-size: 1em;
+        }
+    
+    
+        .populaires_text p
+        {
+            font-size: 0.9em;
+        }
+    
+    
+        .populaires_text .etoiles
+        {
+            font-size: 0.7em;
+        }
+    
+    
+    
+        /* AJUSTEMENTS SUR SECTION HEBERGEMENTS TROUVES */
+        #nos_hebergements .articles_des_heberg, #nos_hebergements h2, #hebergements_voir_plus
+        {
+            width:88%;
+        }
+    
+    
+        #nos_hebergements a
+        {
+            width:100%;
+            padding: 5px;
+            border-radius: 18px;
+            height:250px; 
+        }
+    
+    
+        #nos_hebergements img
+        {
+            border-top-left-radius: 14px;
+            border-top-right-radius: 14px;
+            width: 100%;
+            height: 80%;
+    
+        }
+    
+    
+    
+        #nos_hebergements h3
+        {
+            font-size: 1em;
+        }
+    
+    
+        #nos_hebergements a p
+        {
+            font-size: 0.9em;
+        }
+    
+    
+        #nos_hebergements .etoiles
+        {
+            font-size: 0.75em;
+        } 
+    
+    
+        #hebergements_voir_plus
+        {
+            font-size: 1.1em;
+            margin-top: 10px;
+        } 
+    
+        #nos_hebergements .articles_des_heberg a 
+        {
+        box-shadow: none;
+        }
+    
+    
+        #hebergements_voir_plus
+        {
+            margin-left: 30px;
+            font-weight: bold;
+            margin-top: 1px;
+            padding-top: 1px;
+        }
+    }      
+    
+    

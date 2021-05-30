@@ -305,8 +305,8 @@
 
     /* AJUSTEMENTS SUR SECTION POPULAIRES */
 
-    /* Reorganiser les display et les dimensions des articles "populaires" pour qu'ils soient de memes largeures
-    que celles des "Hebergements" */
+    /* Reorganiser les displays et les dimensions des articles "populaires" pour qu'ils soient de memes largeures que celles des "Hebergements" */
+    
     #populaires
     {
         padding-bottom:20px;
@@ -423,5 +423,79 @@
         margin-top: 1px;
         padding-top: 1px;
     }
+
+    /* --------------------------------Activités------------------------------- */
+
+    #activites
+    {
+        /*display:flex;
+        flex-direction: column;*/
+        width: 100%;
+        /*height: auto;*/
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 20px;
+        margin-right: 0px;
+    }
+
+
+    #activites .article_activite
+    {
+        background-color:#FFFFFF;
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        /*height: 300px;*/
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+
+    #activites h2
+    {
+        width:88%;
+        margin-bottom: 20px;
+    }
+
+
+    #activites .article_activite a
+    {
+        width:100%;
+        /*height:100%;*/
+        border-radius: 18px;
+        padding: 5px;
+        margin-bottom: 15px;
+    }
+
+
+    #activites .article_activite img
+    {
+        width: 88%;
+        height: 100%;
+        object-fit:cover;
+        border-top-left-radius: 14px;
+        border-top-right-radius: 14px;
+    }
+
+    #activites .article_activite
+    {
+        height: 1875px;
+    }
+    
+    #activites .article_activite a:nth-child(1) img, #activites .article_activite a:nth-child(2) img, 
+    #activites .article_activite a:nth-child(3) img, #activites .article_activite a:nth-child(4) img,
+    #activites .article_activite a:nth-child(5) img, #activites .article_activite a:nth-child(6) img
+    {
+        height: 220px;
+    }
+
+
+
+
+
+
+
 }      
 

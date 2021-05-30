@@ -2,427 +2,426 @@
     /* Affichage spécifique Mobiles */
     /* ---------------------------- */
 
-    @media all and (min-width:375px) and (max-width:667px)
+@media all and (min-width:375px) and (max-width:768px)
+{
+    /* Réautoriser les sections à s'étendre sur toute la largeur */
+    header, #hebergements, #activites
     {
-        /* Réautoriser les sections à s'étendre sur toute la largeur */
-        header, #hebergements, #activites
-        {
-            width:100%;
-        }
+        width:100%;
+    }
+
+
+    /* ------ */
+    /* HEADER */
+    /* ------ */
+
+    header
+    {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+    }
+
+
+    /* Affichage logo/navigation sur deux lignes. Les liens hébergements et activités sont sur la seconde ligne */
+    #header_principale
+    {
+        flex-wrap: wrap;
+        align-items: center;
+    }
     
+
+    nav
+    {
+        order:3;
+        width:100%;
+        text-align: center;
+        margin-top:17px;
+        font-size:0.95em;
+    }
     
-        /* ------ */
-        /* HEADER */
-        /* ------ */
+
+    #hebergements_link, #activites_link
+    {
+        width:50%;
+        padding-bottom:11px;
+        margin-bottom: 17px;
+        padding-top :0px;
+    }
+
+
+    /* Marge a gauche du logo */
+    #logo_container
+    {
+        margin-left: 10px;
+    }
+
+    /* Lien d'inscription un peu plus petit */
+    #signup_link
+    {
+        font-size: 0.95em;
+        padding-top :0px;
+    }
+
+
+    /* Bordure en dessous des liens au lieu d'en dessus */
+    #hebergements_link
+    {
+        border-bottom:3px #0065FC solid; 
+    }
+
+
+    #activites_link
+    {
+        border-bottom:3px #F2F2F2 solid; 
+    }
+
+
+    /* Supprimer l'effet au survol */
+    #hebergements_link:hover, #activites_link:hover
+    {
+        border-top:0px; 
+    }
+
+
+    /*-------------------------------------------------------------------------*/
+    #site_description, #search_bar_container, #filters, #info_nb_logements
+    {
+        /* Marges a gauche et à droite plus importantes que le reste du header */
+        margin-left: 10px;
+        margin-right: 10px;
+    }
     
-        header
-        {
-            margin-left: 0px;
-            margin-right: 0px;
-            padding-left: 0px;
-        }
+
+    /* Légers ajustements sur le titre de la page*/
+    #site_description
+    {
+        font-size:0.95em;
+    }
+
+
+    #site_description p
+    {
+        margin-top:12px;
+    }
+
+
+    /* Mise en forme différente pour la barre de recherche */
+    #search_bar_container
+    {
+        margin-top: 34px;
+        margin-left: 20px;
+    }
+
+
+    #search
+    {
+        /* l'espace de saisie doit s'allonger pour prendre le max de largeur possible */
+        flex:1;
+        font-size: 0.8em;
+        width: 200px;
+    }
+
+
+    #locate_icon
+    {
+        font-size:1.1em;
+        padding:17px 0px 17px 0px;
+        border-bottom-left-radius: 17px;
+        border-top-left-radius: 17px;
+    }
+
+
+    #valid_button
+    {
+        font-size:1.05em;
+        padding-left: 18px;
+        padding-right:18px;
+        margin-left:-16px;
+        border-radius: 16px;
+    }
+
+
+    /* Masquer le bouton avec texte, on affiche celui avec l'icone loupe uniquement */
+    #valid_button_text
+    {
+        display:none;
+    }
+
+
+    #valid_button_icon
+    {
+        display:block;
+    }
     
-    
-        /* Affichage logo/navigation sur deux lignes. Les liens hébergements et activités sont sur la seconde ligne */
-        #header_principale
-        {
-            flex-wrap: wrap;
-            align-items: center;
-        }
+
+    /* Titre filtre au dessus des filtres */
+    #filters
+    {
+        flex-direction: column;
+        align-items:flex-start;
+    }
+
+
+    /* Mise en forme des boutons filtres */
+    #filters h2
+    {
+        font-size:1em;
+    }
+
+
+    #filter_buttons form
+    {
+        margin-right:10px;
+ 
+    }
+
+
+    #filter_buttons button
+    {
+        height:50px;
+        border:#d3d1d1 solid 2px;
+        margin-right: 15px;
+    }
+
+
+    .button_icon
+    {
+        font-size: 1em;
+        height:40px;
+        width:40px;
+    }
+
+
+    .button_text
+    {
+        font-size:1em;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+
+    /* Boutons sur plusieurs lignes */
+    #filter_buttons
+    {
+        flex-wrap: wrap;
         
-    
-        nav
-        {
-            order:3;
-            width:100%;
-            text-align: center;
-            margin-top:17px;
-            font-size:0.95em;
-        }
-        
-    
-        #hebergements_link, #activites_link
-        {
-            width:50%;
-            padding-bottom:11px;
-            margin-bottom: 17px;
-            padding-top :0px;
-        }
-    
-    
-        /* Marge a gauche du logo */
-        #logo_container
-        {
-            margin-left: 10px;
-        }
-    
-        /* Lien d'inscription un peu plus petit */
-        #signup_link
-        {
-            font-size: 0.95em;
-            padding-top :0px;
-        }
-    
-    
-        /* Bordure en dessous des liens au lieu d'en dessus */
-        #hebergements_link
-        {
-            border-bottom:3px #0065FC solid; 
-        }
-    
-    
-        #activites_link
-        {
-            border-bottom:3px #F2F2F2 solid; 
-        }
-    
-    
-        /* Supprimer l'effet au survol */
-        #hebergements_link:hover, #activites_link:hover
-        {
-            border-top:0px; 
-        }
-    
-    
-        /*-------------------------------------------------------------------------*/
-        #site_description, #search_bar_container, #filters, #info_nb_logements
-        {
-            /* Marges a gauche et à droite plus importantes que le reste du header */
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-        
-    
-        /* Légers ajustements sur le titre de la page*/
-        #site_description
-        {
-            font-size:0.95em;
-        }
-    
-    
-        #site_description p
-        {
-            margin-top:12px;
-        }
-    
-    
-        /* Mise en forme différente pour la barre de recherche */
-        #search_bar_container
-        {
-            margin-top: 34px;
-            margin-left: 20px;
-        }
-    
-    
-        #search
-        {
-            /* l'espace de saisie doit s'allonger pour prendre le max de largeur possible */
-            flex:1;
-            font-size: 0.8em;
-            width: 200px;
-        }
-    
-    
-        #locate_icon
-        {
-            font-size:1.1em;
-            padding:17px 0px 17px 0px;
-            border-bottom-left-radius: 17px;
-            border-top-left-radius: 17px;
-        }
-    
-    
-        #valid_button
-        {
-            font-size:1.05em;
-            padding-left: 18px;
-            padding-right:18px;
-            margin-left:-16px;
-            border-radius: 16px;
-        }
-    
-    
-        /* Masquer le bouton avec texte, on affiche celui avec l'icone loupe uniquement */
-        #valid_button_text
-        {
-            display:none;
-        }
-    
-    
-        #valid_button_icon
-        {
-            display:block;
-        }
-        
-    
-        /* Titre filtre au dessus des filtres */
-        #filters
-        {
-            flex-direction: column;
-            align-items:flex-start;
-        }
-    
-    
-        /* Mise en forme des boutons filtres */
-        #filters h2
-        {
-            font-size:1em;
-        }
-    
-    
-        #filter_buttons form
-        {
-            margin-right:10px;
-     
-        }
-    
-    
-        #filter_buttons button
-        {
-            height:50px;
-            border:#d3d1d1 solid 2px;
-            margin-right: 15px;
-        }
-    
-    
-        .button_icon
-        {
-            font-size: 1em;
-            height:40px;
-            width:40px;
-        }
-    
-    
-        .button_text
-        {
-            font-size:1em;
-            padding-left: 0px;
-            padding-right: 0px;
-        }
-    
-    
-        /* Boutons sur plusieurs lignes */
-        #filter_buttons
-        {
-            flex-wrap: wrap;
-            
-        }
-    
-    
-        #filter_buttons form
-        {
-            margin-bottom:14px;
-        }
-    
-    
-        /* Augmenter  la taille de de la phrase d'info */
-        #circle_info
-        {
-            height:23px;
-            width:23px;
-            align-self:flex-start;
-            margin-left: 0px;
-            margin-right: 5px;
-            margin-top: -2px;
-        }
-    
-    
-        #circle_info i
-        {
-            font-size:0.70em;
-            margin-left: 0px;
-            margin-right: 5px;
-            margin-top: 2px;
-        }
-    
-    
-        #info_text
-        {
-            font-size:0.95em;
-            width: 90%;
-            margin-top: 0px;
-        }
-        
-    
-        /* ------------------------------------------------------------------------------------------------ */
-        /* ------------------SECTIONS (Hébergement à Marseilles + Les Plus Populaires)--------------------- */
-        /* ------------------------------------------------------------------------------------------------ */
-    
-        #hebergements
-        {
-            display:flex;
-            flex-direction: column;
-            width: 100%;
-            padding-left: 0px;
-            padding-right: 0px;
-            margin-left: 0px;
-            margin-right: 0px;
-    
-        }
-    
-    
-        #nos_hebergements
-        {
-            background-color:#FFFFFF;
-            order:2;
-            width: 100%;
-            padding-left: 0px;
-            padding-right: 0px;
-            padding-bottom: 0px;
-            margin-bottom: 0px;
-        
-        }
-    
-    
-        #populaires
-        {
-            order:1;
-            width: 100%;
-            padding-left: 0px;
-            padding-right: 0px;
-            margin-left: 20px;
-        }
-     
-    
-        #populaires .articles_des_heberg 
-        {
-            margin-right: 45px;
-        }    
-    
-        /* Enlever l'arrondi sur les coins des sections */
-        #populaires, #nos_hebergements
-        {
-            border-radius:0px;
-        }
-    
-        
-        /* Agrandir les titres des sections */
-        #populaires h2, #nos_hebergements h2, #activites h2
-        {
-            font-size:1.3em;
-        }
-    
-    
-        /* AJUSTEMENTS SUR SECTION POPULAIRES */
-    
-        /* Reorganiser les display et les dimensions des articles "populaires" pour qu'ils soient de memes largeures
-        que celles des "Hebergements" */
-        #populaires
-        {
-            padding-bottom:20px;
-        }
-    
-    
-        #populaires h2
-        {
-            width:88%;
-            margin-bottom: 20px;
-        }
-    
-    
-        #populaires a
-        {
-            width:100%;
-            height:130px;
-            border-radius: 18px;
-            padding: 5px;
-            margin-bottom: 15px;
-        }
-    
-    
-        #populaires img
-        {
-            width: 38%;
-            height: 100%;
-            object-fit:cover;
-            border-top-left-radius: 14px;
-            border-bottom-left-radius: 14px;
-        }
-    
-    
-        .populaires_text h3
-        {
-            font-size: 1em;
-        }
-    
-    
-        .populaires_text p
-        {
-            font-size: 0.9em;
-        }
-    
-    
-        .populaires_text .etoiles
-        {
-            font-size: 0.7em;
-        }
-    
-    
-    
-        /* AJUSTEMENTS SUR SECTION HEBERGEMENTS TROUVES */
-        #nos_hebergements .articles_des_heberg, #nos_hebergements h2, #hebergements_voir_plus
-        {
-            width:88%;
-        }
-    
-    
-        #nos_hebergements a
-        {
-            width:100%;
-            padding: 5px;
-            border-radius: 18px;
-            height:250px; 
-        }
-    
-    
-        #nos_hebergements img
-        {
-            border-top-left-radius: 14px;
-            border-top-right-radius: 14px;
-            width: 100%;
-            height: 80%;
-    
-        }
-    
-    
-    
-        #nos_hebergements h3
-        {
-            font-size: 1em;
-        }
-    
-    
-        #nos_hebergements a p
-        {
-            font-size: 0.9em;
-        }
-    
-    
-        #nos_hebergements .etoiles
-        {
-            font-size: 0.75em;
-        } 
-    
-    
-        #hebergements_voir_plus
-        {
-            font-size: 1.1em;
-            margin-top: 10px;
-        } 
-    
-        #nos_hebergements .articles_des_heberg a 
-        {
-        box-shadow: none;
-        }
-    
-    
-        #hebergements_voir_plus
-        {
-            margin-left: 30px;
-            font-weight: bold;
-            margin-top: 1px;
-            padding-top: 1px;
-        }
-    }      
-    
-    
+    }
+
+
+    #filter_buttons form
+    {
+        margin-bottom:14px;
+    }
+
+
+    /* Augmenter  la taille de de la phrase d'info */
+    #circle_info
+    {
+        height:23px;
+        width:23px;
+        align-self:flex-start;
+        margin-left: 0px;
+        margin-right: 5px;
+        margin-top: -2px;
+    }
+
+
+    #circle_info i
+    {
+        font-size:0.70em;
+        margin-left: 0px;
+        margin-right: 5px;
+        margin-top: 2px;
+    }
+
+
+    #info_text
+    {
+        font-size:0.95em;
+        width: 90%;
+        margin-top: 0px;
+    }
+    
+
+    /* ------------------------------------------------------------------------------------------------ */
+    /* ------------------SECTIONS (Hébergement à Marseilles + Les Plus Populaires)--------------------- */
+    /* ------------------------------------------------------------------------------------------------ */
+
+    #hebergements
+    {
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+
+    }
+
+
+    #nos_hebergements
+    {
+        background-color:#FFFFFF;
+        order:2;
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    
+    }
+
+
+    #populaires
+    {
+        order:1;
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 20px;
+    }
+ 
+
+    #populaires .articles_des_heberg 
+    {
+        margin-right: 45px;
+    }    
+
+    /* Enlever l'arrondi sur les coins des sections */
+    #populaires, #nos_hebergements
+    {
+        border-radius:0px;
+    }
+
+    
+    /* Agrandir les titres des sections */
+    #populaires h2, #nos_hebergements h2, #activites h2
+    {
+        font-size:1.3em;
+    }
+
+
+    /* AJUSTEMENTS SUR SECTION POPULAIRES */
+
+    /* Reorganiser les display et les dimensions des articles "populaires" pour qu'ils soient de memes largeures
+    que celles des "Hebergements" */
+    #populaires
+    {
+        padding-bottom:20px;
+    }
+
+
+    #populaires h2
+    {
+        width:88%;
+        margin-bottom: 20px;
+    }
+
+
+    #populaires a
+    {
+        width:100%;
+        height:130px;
+        border-radius: 18px;
+        padding: 5px;
+        margin-bottom: 15px;
+    }
+
+
+    #populaires img
+    {
+        width: 38%;
+        height: 100%;
+        object-fit:cover;
+        border-top-left-radius: 14px;
+        border-bottom-left-radius: 14px;
+    }
+
+
+    .populaires_text h3
+    {
+        font-size: 1em;
+    }
+
+
+    .populaires_text p
+    {
+        font-size: 0.9em;
+    }
+
+
+    .populaires_text .etoiles
+    {
+        font-size: 0.7em;
+    }
+
+
+
+    /* AJUSTEMENTS SUR SECTION HEBERGEMENTS TROUVES */
+    #nos_hebergements .articles_des_heberg, #nos_hebergements h2, #hebergements_voir_plus
+    {
+        width:88%;
+    }
+
+
+    #nos_hebergements a
+    {
+        width:100%;
+        padding: 5px;
+        border-radius: 18px;
+        height:250px; 
+    }
+
+
+    #nos_hebergements img
+    {
+        border-top-left-radius: 14px;
+        border-top-right-radius: 14px;
+        width: 100%;
+        height: 80%;
+
+    }
+
+
+
+    #nos_hebergements h3
+    {
+        font-size: 1em;
+    }
+
+
+    #nos_hebergements a p
+    {
+        font-size: 0.9em;
+    }
+
+
+    #nos_hebergements .etoiles
+    {
+        font-size: 0.75em;
+    } 
+
+
+    #hebergements_voir_plus
+    {
+        font-size: 1.1em;
+        margin-top: 10px;
+    } 
+
+    #nos_hebergements .articles_des_heberg a 
+    {
+    box-shadow: none;
+    }
+
+
+    #hebergements_voir_plus
+    {
+        margin-left: 30px;
+        font-weight: bold;
+        margin-top: 1px;
+        padding-top: 1px;
+    }
+}      
+

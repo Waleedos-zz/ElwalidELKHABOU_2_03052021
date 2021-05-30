@@ -425,7 +425,7 @@ nav
 
 
 
-/* spécifique Hebergements à Marseilles */
+/* --------------------------spécifique Hebergements à Marseilles------------------------------ */
 #nos_hebergements
 {
     background-color:#F2F2F2;
@@ -493,7 +493,7 @@ nav
 }
 
 
-/* spécifique Populaires */
+/* ---------------------spécifique Populaires------------------------- */
 
 #populaires
 {
@@ -503,7 +503,7 @@ nav
 
 #populaires .articles_des_heberg
 {
-    margin-right: 50px;
+    /*margin-right: 50px;  */
     /*box-shadow: 0px 4px 8px #d3d3d3;*/
 }
 
@@ -614,3 +614,83 @@ nav
     font-weight:bold; 
     margin-top: 0px;   
 }
+
+
+/* -------------------------------------------Activités------------------------------------------- */
+
+#activites
+{
+    margin-top:40px;
+    margin-bottom: 30px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#activites .article_activite
+{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content:space-between;
+    justify-content: space-between;
+}
+
+
+#activites a
+{
+    border-radius: 12px;
+    background-color:#FFFFFF;
+    display:flex;
+    flex-direction: column;
+    width:23%;
+}
+
+
+#activites img
+{
+    width: 100%;
+    height: 260px;
+    object-fit:cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+
+#activites h3
+{
+    padding-left:13px;
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+#activites .article_activite
+{
+    height: 410px;
+}
+    
+#activites .article_activite a:nth-child(1) img, #activites .article_activite a:nth-child(4) img
+{
+    height: 354px;
+}
+
+#activites .article_activite a:nth-child(2) img
+{
+    height: 170px;
+}
+
+#activites .article_activite a:nth-child(3) img
+{
+    height: 115px;
+}
+    
+
+#activites .article_activite a:nth-child(5) img, #activites .article_activite a:nth-child(6) img
+{
+    height: 135px;
+}
+
+
+
+

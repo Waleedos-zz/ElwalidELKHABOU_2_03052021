@@ -594,7 +594,7 @@ a
 
 #activites h3
 {
-    padding-left:13px;
+    padding-left:20px;
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -642,11 +642,12 @@ a
 footer
 {
     background-color: #F2F2F2;
-    padding: 40px 55px;
+    padding: 40px 55px 40px 35px;
     margin: 0 auto;
     width: 1440px;
     height: 220px;
     display: flex;
+    align-items: flex-start ;
 
     /*width: 100%;
     display:flex;

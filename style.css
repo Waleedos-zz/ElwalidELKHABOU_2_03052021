@@ -1,4 +1,4 @@
-﻿* 
+* 
 {
     margin: 0;
     padding: 0;
@@ -65,15 +65,14 @@ header
 
 #header_principale
 {
-    padding-top: 15px;
     font-size: 1.1em;
 }
 
 
 #logo_container
 {
+    padding-top: 15px;
     flex:1;
-
 }
 
 
@@ -81,7 +80,7 @@ header
 {
     padding-left:40px;
     padding-right:40px;
-    padding-top:25px;
+    padding-top:40px;
     padding-bottom: 20px;
 }
 
@@ -89,7 +88,7 @@ header
 #signup_link
 {
     padding-left:40px;
-    padding-top:25px;
+    padding-top:40px;
     padding-bottom: 20px;    
     color:#0065FC;
     font-weight: bold;
@@ -124,6 +123,7 @@ nav
 .les_titres_du_site p
 {
     font-size: 1.13em;
+    padding-top: 10px;
 }
 
 
@@ -260,7 +260,7 @@ form button:hover
     flex-direction: row;
     font-weight:bold;
     font-size: 1em;
-    margin-right: 40px;
+    margin-right: 30px;
     align-items:center;
     border-radius: 180px;
     border:#d3d1d1 solid 1px;
@@ -351,6 +351,7 @@ form button:hover
     display: flex;
     justify-content: space-between ;
     margin-bottom: 35px;
+    column-gap: 40px;
 }
 
 
@@ -359,6 +360,7 @@ form button:hover
 .tit_heb_mar 
 {
     padding: 30px 0 20px 50px;
+    font-size: 1.4em;
 }
 
 
@@ -424,7 +426,7 @@ form button:hover
 
 .Mar h3 
 {
-    font-size: 18px;
+    font-size: 1em;
 }
 
 
@@ -468,6 +470,12 @@ form button:hover
 {
     font-size: 25px;
     margin-right: 0px;
+}
+
+
+.haut .titre2
+{
+    font-size: 1.4em;
 }
 
 
@@ -568,6 +576,7 @@ a
 #activites h2
 {
     padding-bottom: 20px;
+    font-size: 1.4em;
 
 }
 
@@ -597,6 +606,7 @@ a
     padding-left:20px;
     padding-top: 15px;
     padding-bottom: 15px;
+    font-size: 0.96em;
 }
 
 /* -----------------Ordre des articles et dimensions des images------------------------ */
@@ -642,19 +652,16 @@ a
 footer
 {
     background-color: #F2F2F2;
-    padding: 40px 55px 40px 35px;
-    margin: 0 auto;
-    width: 1440px;
-    height: 220px;
-    display: flex;
-    align-items: flex-start ;
+    width: 100%;
+}
 
-    /*width: 100%;
-    display:flex;
-    background-color: #F2F2F2;
-    font-size: 0.7em;
-    padding: 40px 0 60px 21em;
-    /*float: left;*/  
+#notre_footer
+{
+    max-width: 1440px;
+    display: flex;
+    flex-flow: wrap;
+    padding: 35px 20px 50px 20px;
+    margin: 0 auto;
 }
 
 

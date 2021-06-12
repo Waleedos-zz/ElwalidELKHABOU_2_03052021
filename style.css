@@ -446,6 +446,13 @@ form button:hover
 
 /* ---------------2-Les plus populaires--------------- */
 
+.fa-chart-line:before
+{
+    content: "\f201";
+    padding-right: 1em;
+}    
+
+
 .populaire 
 {
     height: 600px;

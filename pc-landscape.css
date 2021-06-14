@@ -681,8 +681,7 @@ footer
 
 #nos_hebergements, #a_propos, #assistance
 {
-    width: 30
-    /*padding-right: 60px;*/
+    width: 30px;
 }
 
 
@@ -719,8 +718,3 @@ footer li
     color: #0065FC;
 }
 
-*/
-
-
-
-}

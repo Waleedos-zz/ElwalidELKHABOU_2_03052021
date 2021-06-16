@@ -166,7 +166,7 @@ form i
     font-size: 1.2em;
     display: flex;
     align-items: center;
-    border: solid 1px;
+    border: solid 1px white;
     border-radius: 10px 0 0 10px;
 
 }
@@ -174,7 +174,7 @@ form i
 
 form input 
 {
-    border: solid 1px;
+    border: solid 1px white;
     padding: 9px;
     color: black;
     font-size: 20px;
@@ -399,7 +399,7 @@ header
     width: 32%;
     height: 195px;
     background-color: white;
-    border: 5px solid ;
+    border: 5px solid #ffffff;
     border-radius: 25px;
     margin-bottom: 20px;
     box-shadow: 2px 2px 5px #d1cfcf;

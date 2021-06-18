@@ -349,7 +349,7 @@
     .heb_a_marseilles 
     {
         width: 100%;
-        background-color: white;
+        background-color: transparent;
         border: 5px solid;
         border-color: #FEFEFE;
         border-radius: 25px;
